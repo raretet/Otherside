@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, } from "react-router-dom";
 
 import './index.sass';
+import Connect from './pages/Connect/Connect';
 import Explore from './pages/Explore/Explore';
 import Litepaper from './pages/Litepaper/Litepaper';
 import Obelisk from './pages/Obelisk/Obelisk';
@@ -20,6 +21,7 @@ root.render(
       <Route path='/litepaper' element={<Litepaper/>}/>
       <Route path='/explore' element={<Explore/>}/>
       <Route path='/odk' element={<Odk/>}/>
+      <Route path='/connect' element={<Connect/>}/>
     </Routes>
   </BrowserRouter> 
 );

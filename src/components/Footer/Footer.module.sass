@@ -1,0 +1,146 @@
+.footer
+    padding-top: 10rem
+
+    &_img
+        margin-top: 3rem
+
+    &_partners
+        display: flex
+        width: 100%
+        max-width: 400px
+        justify-content: space-between
+        align-items: center
+
+        & img
+            max-height: 30px
+
+    &_form
+        display: flex
+        justify-content: center
+        width: 100%
+        margin-top: 4rem
+        margin-bottom: 2rem
+        font-family: Inter
+
+        &_container
+            text-align: center
+            font-size: .875rem
+            line-height: 1.25rem
+
+        &_title
+            color: rgb(142 142 142/1)
+
+        &_email
+            width: 100%
+            max-width: 450px
+            margin-top: 30px
+
+            & input
+                font-family: Inter
+                background: inherit
+                border: 1px solid hsla(0,0%,100%,.4)
+                color: white
+                padding: .5rem 1rem
+                height: 40px
+
+            & button
+                font-family: Inter
+                width: 120px
+                height: 40px
+                background: rgb(38 47 247/1)
+                border: 1px solid hsla(0,0%,100%,.4)
+                text-transform: uppercase
+                color: white
+                cursor: pointer
+                transition: .3s
+
+            & button:hover
+                background: rgb(38 47 247/.7)
+
+    &_info
+        width: 100%
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        color: rgb(142 142 142/1)
+
+        &_links
+            display: flex
+            list-style: none
+            margin-left: 30px
+            & li
+                font-family: Inter
+                font-size: 8px
+                line-height: 1.5
+                letter-spacing: .1em
+                text-transform: uppercase
+                margin-left: 16px
+                padding-bottom: 4px
+                border-bottom: 1px solid
+                cursor: pointer
+
+        & span
+            text-align: left
+            font-family: Inter
+            font-size: 8px
+            line-height: 1.5
+            letter-spacing: .1em
+
+    &_content
+        display: flex
+        flex-direction: column
+        align-items: center
+        width: 50%
+        margin-left: auto
+        margin-right: auto
+
+    &_SN
+        & ul
+            display: flex
+            list-style: none
+            gap: 15px
+            margin-left: 35px
+            & li a img
+                width: 16px
+
+/* MEDIA */
+
+@media (max-width: 1300px)
+    .footer_info
+        gap: 30px
+
+    .footer_SN
+        margin-top: 20px
+
+@media (max-width: 768px)
+    .footer_content
+        width: 90%
+
+    .footer_partners
+
+        & img
+            max-height: 20px
+
+    .footer_info
+        flex-direction: column-reverse
+
+        & span
+            margin-top: 20px
+
+    .footer_info_links
+        flex-wrap: wrap
+        gap: 5px
+        justify-content: center
+        margin-left: 0
+        margin-top: 20px
+        & li
+            margin-left: 10px
+
+    .footer_SN
+        width: 100%
+        & ul
+            margin-left: 0
+            justify-content: center
+            & li a img
+                width: 30px
