@@ -1,0 +1,33 @@
+.about
+    display: flex
+    align-items: center
+    flex-direction: column
+    text-align: center
+    &_name
+        margin-bottom: 2rem
+        padding: .75rem 1rem
+        border-radius: 10px
+        letter-spacing: .15rem
+        text-transform: uppercase
+        font-size: 13px
+        font-family: Inter
+        background-color: hsla(0,0%,100%,.1)
+    &_title
+        font-family: F37 Judge
+        font-size: 125px
+        line-height: .88
+        text-transform: uppercase
+
+    &_text
+        font-family: Coanda
+        max-width: 500px
+        font-size: 20px
+        margin-top: 2rem
+
+/* MEDIA */
+
+@media (max-width: 768px)
+    .about_title
+        font-size: 90px
+    .about_text
+        font-size: 15px
