@@ -1,0 +1,51 @@
+.navbar
+    display: block
+    grid-column: span 3/span 3
+    &_content
+        height: calc(100vh - 120px)
+        overflow-y: scroll
+        padding-bottom: 4rem
+        padding-right: 0.5rem
+        &_title
+            font-family: Coanda
+            text-transform: uppercase
+            font-weight: 600
+            font-size: .875rem
+            line-height: 1.25rem
+            margin-bottom: 1rem
+        &_list
+            list-style: none
+            margin: 0
+            padding: 0
+
+.list
+    font-family: Inter
+    margin-top: 0.5rem
+    padding: 0 .5rem
+    &_title
+        &_number
+            font-family: Coanda
+            font-size: .8rem
+            line-height: 1.875rem
+            text-align: center
+            margin-right: 0.5rem
+        &_text
+            cursor: pointer
+            text-transform: uppercase
+            font-family: Inter
+            font-weight: 600
+            font-size: 14px
+    &_link
+        cursor: pointer
+        display: flex
+        align-items: center
+        font-family: Inter
+        font-size: 10px
+        margin-bottom: .5rem
+        margin-left: 2.3334rem
+        color: hsla(0,0%,100%,.7)
+
+// MEDIA
+@media (max-width: 780px)
+    .navbar
+        display: none

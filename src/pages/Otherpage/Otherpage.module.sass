@@ -1,0 +1,130 @@
+.otherpage
+    &_sec1
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        height: 100vw
+        background-image: url(../../assets/images/otherpage/sec1.webp)
+        background-size: cover
+        padding-bottom: 6rem
+    &_sec3
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        height: 100vh
+        background-image: url(../../assets/images/otherpage/sec3.jpeg)
+        background-size: cover
+        padding: 4rem 0
+    &_sec4
+        padding-top: 16rem
+        background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 44%, rgba(0,0,0,0.5004595588235294) 100%)
+    &_sec5
+        margin-top: 8rem
+        margin-bottom: 8rem
+    &_sec6
+        margin-top: 12rem
+        padding-left: 6rem
+        padding-right: 6rem
+        padding-bottom: 6rem
+        margin-left: auto
+        margin-right: auto
+        width: 100%
+        max-width: 1440px
+    &_sec8
+        padding: 8rem 0
+    &_sec9
+        margin-top: 6rem
+        padding-bottom: 8rem
+.sec8_img
+    max-width: 510px
+    margin: 0 auto
+.sec8_desc
+    margin-top: 6rem
+
+    &_sec7
+.sec7_container
+    display: flex
+    flex-direction: column
+    gap: 40px
+    margin-top: 10rem
+    padding-bottom: 6rem
+
+.sec7_line
+    display: flex
+    justify-content: center
+    gap: 20px
+.line_item
+    display: flex
+    align-items: flex-end
+    width: 350px
+    height: 450px
+    background-size: cover
+    border-radius: 10px
+    padding: 10px
+    &_text
+        font-size: 60px
+        line-height: .8
+        font-family: F37 Judge
+
+.sec4_items
+    display: flex
+    gap: 20px
+    justify-content: center
+    & img
+        max-width: 367px
+
+.sec6_content
+    display: grid
+    margin: 0 auto
+    grid-template-columns: repeat(4,minmax(0,1fr))
+    gap: 2rem
+
+.world_sec7
+    padding-top: 11rem
+    background-image: url(../../assets/images/word/worldBg.jpeg)
+    background-size: cover
+    padding-bottom: 6rem
+
+.resources
+    display: grid
+    grid-template-columns: repeat(2,minmax(0,1fr))
+    margin-top: 3rem
+    gap: 2rem
+    max-width: 832px
+    margin-left: auto
+    margin-right: auto
+    &_item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        padding: 1.25rem
+        border-radius: 20px
+        width: 400px
+        height: 370px
+        border: 1px solid rgb(88 88 88/1)
+        &_title
+            text-align: center
+            font-family: Coanda
+            font-size: 40px
+            line-height: 1
+            margin-top: 2rem
+        &_subtitle
+            text-align: center
+            color: rgb(89 89 89/1)
+            letter-spacing: .1em
+            font-size: 12px
+            font-family: Inter
+            margin-top: .45rem
+
+// MEDIA
+
+@media (max-width: 1050px)
+    .resources
+        grid-template-columns: 1fr
+        &_item
+            max-width: 350px
+    .sec4_items
+        flex-direction: column
+    .sec7_line
+        flex-direction: column
